@@ -11,7 +11,7 @@ def findsum(arr, target):
       my_dict[remaining] = ind
   return 'no match'
 
-  # Day2- Second Question 
+  # Day1- Second Question 
   def findthreesum(arr, target):
   my_dict = {}
   for i in range(len(arr)):
