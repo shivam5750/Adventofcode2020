@@ -19,7 +19,8 @@ def findsum(arr, target):
       if i!= j:
         rem = target - (arr[i]+ arr[j])
         if rem in my_dict:
-          return rem, arr[i], arr[j]
+          print(rem, arr[i], arr[j])
+          return rem* arr[i]* arr[j]
         else:
           my_dict[arr[i]] = True
   return None
