@@ -38,7 +38,7 @@ with open('inputday5.txt','r') as file:
 # BBFFBBFRLL: row 102, column 4, seat ID 820.
 # As a sanity check, look through your list of boarding passes. What is the highest seat ID on a boarding pass?
 
-def searcTickets(string, row_column):
+def searchTickets(string, row_column):
   for char in string:
     if char == 'F' or char == 'L':
       row_column[0] = row_column[0]
@@ -56,8 +56,8 @@ def searcTickets(string, row_column):
  #Seat Id Finder  
 list_seat = [] 
 for seat in input:
-  rows = searcTickets(seat[:7], [0, 127])
-  column = searcTickets(seat[7:], [0, 7])
+  rows = searchTickets(seat[:7], [0, 127])
+  column = searchTickets(seat[7:], [0, 7])
   seat = rows * 8 + column
   list_seat.append(seat)
 print(max(list_seat))
